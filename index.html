@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SpacialDB</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbarPaddingBackgroundColor navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href=""> SpacialDB</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href=""> Home</a>
+            </li>
+            <li>
+              <a href=""> About</a>
+            </li>
+            <li>
+              <a href=""> Contact</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <button type="submit" class="button-margin btn btn-default button-sharp">
+                <span><i class="fa fa-sign-in"></i></span> Sign in
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="alternate-container">
+
+      <div class="jumbotron alternate">
+        <div class="container">
+          <div class="text-center moreMargin">
+            <div class="smallMarginBottom">
+              <h1>PostGIS in a minute!</h1>
+              <p>
+                Provision a PostGIS instance in the cloud and start developing your awesome geospatial applications.
+              </p>
+            </div>
+            <button type="submit" class="btn btn-default btn-lg button-sharp"><span><i class="fa fa-rocket"></i></span> Sign up</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="alternate pricing">
+        <div class="container">
+          <div class="row">
+              <div class="headline-margin-bottom">
+                <h1>Pricing</h1>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-xs-6">
+                <ul class="list-group plan">
+                  <li class="list-group-item plan-price text-center">
+                    <h2>
+                      <i class="fa fa-eur"></i> 10
+                      <small>per month</small>
+                    </h2>
+                  </li>
+                  <li class="list-group-item plan-data">
+                    <i class="fa fa-check fa-fw"></i>
+                    <strong>512MB</strong> Memory
+                  </li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>1 Core</strong> Processor</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>20GB</strong> Storage</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>1TB</strong> Bandwidth</li>
+
+                  <li class="list-group-item plan-data text-center plan-bottom">
+                    <div class="moreMarginTop">
+                      <button type="submit" class="btn btn-default button-sharp"><span><i class="fa fa-rocket"></i></span> Sign up</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-xs-6 plan">
+                <ul class="list-group">
+                  <li class="list-group-item plan-price text-center">
+                    <h2>
+                      <i class="fa fa-eur"></i> 20
+                      <small>per month</small>
+                    </h2>
+                  </li>
+                  <li class="list-group-item plan-data">
+                    <i class="fa fa-check fa-fw"></i>
+                    <strong>1GB</strong> Memory
+                  </li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>1 Core</strong> Processor</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>30GB</strong> Storage</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>2TB</strong> Bandwidth</li>
+                  <li class="list-group-item plan-data text-center">
+                    <div class="moreMarginTop">
+                      <button type="submit" class="btn btn-default button-sharp"><span><i class="fa fa-rocket"></i></span> Sign up</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-xs-6 plan">
+                <ul class="list-group">
+                  <li class="list-group-item plan-price text-center">
+                    <h2>
+                      <i class="fa fa-eur"></i> 40
+                      <small>per month</small>
+                    </h2>
+                  </li>
+                  <li class="list-group-item plan-data">
+                    <i class="fa fa-check fa-fw"></i>
+                    <strong>2GB</strong> Memory
+                  </li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>2 Core</strong> Processor</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>40GB</strong> Storage</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>3TB</strong> Bandwidth</li>
+                  <li class="list-group-item plan-data text-center">
+                    <div class="moreMarginTop">
+                      <button type="submit" class="btn btn-default button-sharp"><span><i class="fa fa-rocket"></i></span> Sign up</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-xs-6 plan">
+                <ul class="list-group">
+                  <li class="list-group-item plan-price text-center">
+                    <h2>
+                      <i class="fa fa-eur"></i> 80
+                      <small>per month</small>
+                    </h2>
+                  </li>
+                  <li class="list-group-item plan-data">
+                    <i class="fa fa-check fa-fw"></i>
+                    <strong>4GB</strong> Memory
+                  </li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>2 Core</strong> Processor</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>60GB</strong> Storage</li>
+                  <li class="list-group-item plan-data"><i class="fa fa-check fa-fw"></i> <strong>4TB</strong> Bandwidth</li>
+                  <li class="list-group-item plan-data text-center">
+                    <div class="moreMarginTop">
+                      <button type="submit" class="btn btn-default button-sharp"><span><i class="fa fa-rocket"></i></span> Sign up</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="alternate">
+        <div class="container moreMarginBottom">
+          <div class="row">
+            <div class="headline-margin-bottom">
+              <h1>All Plans include</h1>
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-clock-o fa-4x"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">Uptime</h4>
+                  99.99% Uptime SLA.
+                </div>
+              </div>
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-hdd-o fa-4x"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">Disks</h4>
+                  Solid-State Drives (SSD).
+                </div>
+              </div>
+
+              <div class="media">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-globe fa-4x"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">Multiple Datacenter Locations</h4>
+                  Select the best US, Europe or Asia location based on latency.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-database fa-4x"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">PostgreSQL</h4>
+                  PostgreSQL 9.4.1 with all the extensions and data-types.
+                </div>
+              </div>
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-dot-circle-o fa-4x"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">Latest PostGIS</h4>
+                  PostGIS 2.1 with Topology, Raster and Tiger Geocoder extensions.
+                </div>
+              </div>
+
+              <div class="media">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-cog fa-4x"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">Admin Role</h4>
+                  Admin role to create as many users and databases you like.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="alternate">
+        <div class="container">
+          <div class="row">
+            <div class="headline-margin-bottom">
+              <h1>Pricing FAQ</h1>
+            </div>
+
+            <div class="col-lg-6">
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-chevron-right fa-4x icon"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">How am I billed?</h4>
+                  Each database instance is billed hourly up to its monthly cost.
+                </div>
+              </div>
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-chevron-right fa-4x icon"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">Am I charged when I enter a credit card?</h4>
+                  <p>No you are charged at the end of each month. We use your credit card to verify adequate funds.</p>
+                </div>
+              </div>
+
+              <div class="media">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-chevron-right fa-4x icon"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">How do I cancel my subscription?</h4>
+                  You may cancel your subscription any time and we will only charge for the hours your database instance was alive.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-6">
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-chevron-right fa-4x icon"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">What form of payments do you accept?</h4>
+                  We accept Visa, MasterCard, American Express, and Discover.
+                </div>
+              </div>
+
+              <div class="media tiny-margin-bottom">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-chevron-right fa-4x icon"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">Do you offer refunds?</h4>
+                  No, we do not offer refunds.
+                </div>
+              </div>
+
+              <div class="media">
+                <div class="media-left paddingRight">
+                  <i class="fa fa-chevron-right fa-4x icon"></i>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading">How much is additional bandwidth?</h4>
+                  Additional bandwidth transfer is only 2¢ per GB.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="alternate footer">
+        <div class="container">
+          <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>SpacialDB &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

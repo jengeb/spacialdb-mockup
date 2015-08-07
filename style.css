@@ -1,0 +1,106 @@
+.moreMargin {
+  margin: 7.5em;
+}
+
+.button-sharp {
+  border-radius:0;
+  background-color: #FFFFFF;
+}
+
+.alternate {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.alternate-container > .alternate:nth-child(odd) {
+  background-color: #1A237E;
+  color: white;
+}
+
+.navbarPaddingBackgroundColor {
+  padding: 10px;
+  background-color: #000000;
+}
+
+.jumbotron {
+  padding: 8em;
+}
+
+.smallMarginBottom {
+  margin-bottom: 4.5em;
+}
+
+.moreMarginTop {
+  margin: 2em;
+}
+
+.moreMarginBottom {
+  margin-bottom: 3.5em;
+}
+
+.paddingRight {
+  padding-right: 1.3em;
+}
+
+.plan-data {
+  background-color: #F5F5F5;
+  transition: background-color 0.5s ease;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.plan:hover .plan-data {
+  background-color: #EEEEEE;
+}
+
+.plan:hover .plan-price {
+  background-color: #303F9F;
+}
+
+.plan .list-group-item:last-child {
+  border-bottom: 4px solid #1A237E;
+}
+
+.plan:hover .list-group-item:last-child {
+  border-bottom: 4px solid #303F9F;
+}
+
+.plan-price {
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #1A237E;
+  transition: background-color 0.5s ease;
+  border: none;
+}
+
+.plan-price h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.plan-price small {
+  color: white;
+  display: block;
+}
+
+.button-margin {
+  margin: 10px;
+}
+
+.tiny-margin-bottom {
+  margin-bottom: 3em;
+}
+
+.headline-margin-bottom {
+  margin-bottom: 4em;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.icon {
+  color: #E0E0E0;
+}
