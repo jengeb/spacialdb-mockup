@@ -7,19 +7,24 @@
   background-color: #FFFFFF;
 }
 
+.list-group-item:first-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
 .alternate {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
 .alternate-container > .alternate:nth-child(odd) {
-  background-color: #1A237E;
-  color: white;
+  background-color: #2196F3;
+  color: #FFFFFF;
 }
 
 .navbarPaddingBackgroundColor {
-  padding: 10px;
-  background-color: #000000;
+  padding: 1.4em;
+  background-color: #1A237E;
 }
 
 .jumbotron {
@@ -96,11 +101,48 @@
   margin-bottom: 4em;
 }
 
-.footer {
-  padding-top: 60px;
-  padding-bottom: 40px;
+.inner {
+  max-width: 1400px;
+  padding: 0 80px;
+  text-align: center;
 }
 
 .icon {
-  color: #E0E0E0;
+  color: #E3F2FD;
+}
+
+.text {
+  max-width: 1000px;
+}
+
+.footer-inner {
+  margin-top: 2em;
+  padding: 1.3em;
+  border-top: 1px solid #E3F2FD;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+
+#custom-bootstrap-menu.navbar-default {
+  border-width: 0px;
+  border-radius: 0px;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+  color: #FFFFFF;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+  color: #FFFFFF;
+  background-color: #303F9F;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+  color: #FFFFFF;
+  background-color: #303F9F;
 }
