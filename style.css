@@ -105,6 +105,7 @@
   max-width: 1400px;
   padding: 0 80px;
   text-align: center;
+  font-size: 1.3em;
 }
 
 .icon {
@@ -159,7 +160,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 40px;
-  border-top: 1px solid #BBDEFB;
+  border-top: 1px solid #90CAF9;
 }
 
 a {
@@ -183,5 +184,5 @@ a {
 }
 
 .text-muted-color {
-  color: #777;
+  color: #90CAF9;
 }
