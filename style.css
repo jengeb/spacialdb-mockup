@@ -160,14 +160,13 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 40px;
-  border-top: 1px solid #90CAF9;
+  border-top: 1px solid #E3F2FD;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
 
 .text-muted {
   margin: 20px 0;
