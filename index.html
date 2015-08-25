@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +15,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link href="style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+
+    <script src="app.js"></script>
+
   </head>
 
   <body>
-    <nav id="custom-bootstrap-menu" class="navbarPaddingBackgroundColor navbar navbar-fixed-top navbar-default">
+    <nav id="custom-bootstrap-menu" class="navbarPaddingBackgroundColor navbar navbar-fixed-top navbar-default"  ng-controller="NavigationController">
       <div class="container">
 
         <div class="navbar-header">
@@ -28,22 +33,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href=""> <i class="fa fa-cloud"></i> SpacialDB</a>
+          <a class="navbar-brand"> <i class="fa fa-cloud"></i> SpacialDB</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="active">
-              <a href=""> About</a>
+            <li ng-class="{ active: isActive('/about')">
+              <a href="#/about"> About</a>
             </li>
-            <li>
-              <a href=""> Pricing</a>
+            <li ng-class="{ active: isActive('/pricing')">
+              <a href="#/pricing"> Pricing</a>
             </li>
-            <li>
-              <a href=""> FAQ</a>
+            <li ng-class="{ active: isActive('/faq')">
+              <a href="#/faq"> FAQ</a>
             </li>
-            <li>
-              <a href=""> Contact</a>
+            <li ng-class="{ active: isActive('/contact')">
+              <a href="#/contact"> Contact</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
