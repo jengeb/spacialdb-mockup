@@ -22,9 +22,23 @@
   color: #FFFFFF;
 }
 
-.navbarPaddingBackgroundColor {
-  padding: 1.4em;
+.navbar {
   background-color: #1A237E;
+}
+
+.navbar-fixed-top {
+    min-height: 80px;
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+
+.navbar-nav > li > button {
+  margin-top: 23px;
 }
 
 .jumbotron {
