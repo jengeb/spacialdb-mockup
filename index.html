@@ -11,6 +11,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -22,33 +25,35 @@
 
   </head>
 
-  <body>
-    <nav id="custom-bootstrap-menu" class="navbar navbar-fixed-top navbar-default"  ng-controller="NavigationController">
-      <div class="container">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+    <nav id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
-          <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
-            <span class="sr-only">Toggle navigation</span>
+          <button type="button" class="navbar-toggle" data-target="#navbar" data-toggle="collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"> <i class="fa fa-cloud"></i> SpacialDB</a>
+          <a class="navbar-brand" href="#"> <i class="fa fa-cloud"></i> SpacialDB</a>
         </div>
 
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li ng-class="{ active: isActive('/about')">
-              <a href="#/about"> About</a>
+            <li>
+              <a href="#about"> About</a>
             </li>
-            <li ng-class="{ active: isActive('/pricing')">
-              <a href="#/pricing"> Pricing</a>
+            <li>
+              <a href="#pricing"> Pricing</a>
             </li>
-            <li ng-class="{ active: isActive('/faq')">
-              <a href="#/faq"> FAQ</a>
+            <li>
+              <a href="#plans"> Plans</a>
             </li>
-            <li ng-class="{ active: isActive('/contact')">
-              <a href="#/contact"> Contact</a>
+            <li>
+              <a href="#faq"> FAQ</a>
+            </li>
+            <li>
+              <a href="#contact"> Contact</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -62,7 +67,7 @@
       </div>
     </nav>
 
-    <div class="alternate-container">
+    <div id="about" class="alternate-container">
 
       <div class="jumbotron alternate">
         <div class="container">
@@ -78,8 +83,8 @@
         </div>
       </div>
 
-      <div class="alternate">
-        <div class="container">
+      <div id="pricing" class="alternate">
+        <div class="container text">
           <div class="row">
               <div class="headline-margin-bottom">
                 <h1>Pricing</h1>
@@ -182,7 +187,7 @@
         </div>
       </div>
 
-      <div class="alternate">
+      <div id="plans" class="alternate">
         <div class="container moreMarginBottom text">
           <div class="row">
             <div class="headline-margin-bottom">
@@ -260,7 +265,7 @@
         </div>
       </div>
 
-      <div class="alternate">
+      <div id="faq" class="alternate">
         <div class="container text">
           <div class="row">
             <div class="headline-margin-bottom">
@@ -338,14 +343,38 @@
         </div>
       </div>
 
+
+      <div id="contact" class="alternate">
+        <div class="container text">
+          <div class="row">
+            <div class="headline-margin-bottom">
+              <h1>Contact</h1>
+            </div>
+            <div class="col-md-6">
+              <address>
+                <strong>Test, Inc.</strong><br>
+                123 Test Ave, Suite 123<br>
+                San Francisco, CA 94107<br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+              </address>
+
+              <address>
+                <strong>Full Name</strong><br>
+                <a href="mailto:#">first.last@example.com</a>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <footer class="footer">
         <div class="container">
           <div class="inner text-muted">
               <ul class="bs-docs-footer-links text-muted-color">
                 <li><i class="fa fa-cloud"></i> SpacialDB</li>
                 <li>  </li>
-                <li><a> Contact</a></li>
-                <li> | </li>
+                <!--li><a> Contact</a></li>
+                <li> | </li-->
                 <li><a> Legal Notice</a></li>
                 <li> | </li>
                 <li><a> Privacy Policy</a></li>
