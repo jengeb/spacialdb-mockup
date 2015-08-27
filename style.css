@@ -202,3 +202,12 @@ a {
 .text-muted-color {
   color: #90CAF9;
 }
+
+#map {
+  width: 550px;
+  height: 300px
+}
+
+.leaflet-popup-content {
+  color: #000;
+}
