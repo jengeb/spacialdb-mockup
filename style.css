@@ -1,7 +1,7 @@
 .moreMargin {
   margin-left: 7.5em;
   margin-right: 7.5em;
-  margin-bottom: 7.5em;
+  margin-bottom: 2em;
 }
 
 .button-sharp {
@@ -216,4 +216,8 @@ a {
 
 .icon-color {
   color: #303F9F;
+}
+
+.margin-top {
+  margin-top: 2em;
 }
