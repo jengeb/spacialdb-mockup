@@ -6,11 +6,12 @@
 .button-sharp {
   border-radius:0;
   background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .list-group-item:first-child {
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .alternate {
@@ -87,10 +88,9 @@
 
 .list-group-item:last-child {
     margin-bottom: 0;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
-
 
 .plan-price {
   color: white;
@@ -226,4 +226,9 @@ a {
 
 .margin-top {
   margin-top: 2em;
+}
+
+.btn-default:hover {
+  background-color: #CFD8DC;
+  border-color: #CFD8DC;
 }
